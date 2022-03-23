@@ -1,5 +1,45 @@
 h1{color:blue;}
 /* esto es para hacer comentarios en css*/
 
-/*
+body{background-color: black;}
+
+/* pone el fondo de la pagina de color negro*/
+
+*{color: white} 
+
+/* esto te permite poner toda la tipografia de color
+blanco */
+
+/* tambien se pueden elegir colores no por nombre pero
+por el codigo hexadecimal
+
+ej: *{color: #ff00ff} */
+
+/* este te va a poner una imagen como fondo de la pagina" */
+
+body{background-image:url("./clase 1/imagenes/gato.jpeg");
+    background-repeat: repeat-x;}
+
+    /* 
+    para el background repeat, el "repeat-x" te repite la 
+    imagen en el eje x, mientras que "repeat-y" te lo repite en el y
+    "no repeat" no repite la imagen.
+    "repeat" repite la imagen en ambos ejes.
+    */
+
+    /* 
+    esto cambia el ancho y el largo respectivamente de la foto
+    */
+    
+#foto-body{
+    width: 50%;
+    height: 200px;
+}
+
+/* 
+    esto cambia el tamaño de letra
+    */
+
+h1{font-size: 10px;}
+
 
