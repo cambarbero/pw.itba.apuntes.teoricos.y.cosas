@@ -18,7 +18,7 @@ ej: *{color: #ff00ff} */
 /* este te va a poner una imagen como fondo de la pagina" */
 
 body{background-image:url("./clase 1/imagenes/gato.jpeg");
-    background-repeat: repeat-x;}
+    background-repeat: repeat;}
 
     /* 
     para el background repeat, el "repeat-x" te repite la 
@@ -34,12 +34,111 @@ body{background-image:url("./clase 1/imagenes/gato.jpeg");
 #foto-body{
     width: 50%;
     height: 200px;
+    left:20px; /* luego estableces a donde queres que se mueva por ej 20px a la izquierda (asi no esta pegado
+    al borde de la pagina) 
+    se puede hacer ademas de left, right, bottom y top como condiciones
+    */
 }
 
 /* 
     esto cambia el tamaño de letra
     */
+h1{font-size: 30px;}
 
-h1{font-size: 10px;}
 
+#modeloDeCaja{
+        width: 150px;
+        border: 15px solid red; /*una propiedad puede recibir varios valores (tamaño, tipo y color 
+        respectivamente) */
 
+        /* podes en vez de que el reborde te aparezca como una linea con el "solid"
+        les pones "dotted" y te aparece rodeado pero con puntos rojos*/
+
+        padding: 30px;
+        margin: 10px;
+        
+    }
+
+#icono-contacto{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+/* el envelope, cuando scrolle, va a seguir apareciendo abajo (no se "queda atras") */
+
+header{
+    list-style-type: none;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: grey;
+
+}
+
+menu{
+    list-style-type: none;
+    float: right; /* el float right me mueve el menu a la derecha y lo que tenia abajo de ese renglon
+    se sube al renglon donde esta el menu */
+
+}
+/* el menu que puse arriba de la pagina, cuando scrolle, va a seguir apareciendo arriba (no se "queda atras") */
+
+menu > a > li{ /* de la propiedad menu, los que sean a, selecciona los que sean li (pseudo selectores) */
+    display: inline; /* convertis el menu que creaste de ser bloque (ocupaba todo el espacio)
+    a ser inline */
+    float: right;
+}
+
+#logo-header{
+    width: 5%;
+    float: left;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+}
+
+.col{
+    border:1px solid white /* asi le das lineas 
+    de color a tus columnas */
+}
+
+.col-6{border:1px solid white
+
+}
+
+.btn-primary{
+    background-color: green; /* asi 
+    le pongo un color al boton que cree cuando el mouse NO esta
+    por clickearlo, cuando esta por clickearlo sigue siendo
+    del color original que dio boostrap */
+}
+
+#menu{
+    position: relative;
+    right:0px;
+}
+
+table{
+    border:1px solid white;
+}
+
+td{
+    border:1px solid white;
+}
+
+th{
+    border:1px solid white;
+}
+
+@media screen and(min-width: 480px){
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* aca decia que cuando la pagina se abra en un dispositivo
+de ancho minimo 480 el color del que se va a mostrar
+el fondo va a ser verde claro */
