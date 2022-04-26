@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de JavaScript</title>
+    
+    <!-- style indica que lo que hay adentro es de css -->
+    <style> 
+    </style>
+</head>
+<body>
+ 
+<script> // script indica que lo que hay adentro es de javascript
+    let nombre = "camilo"
+    document.write('Hola Mundo') // asi escribir algo en la pagina con java script
+    console.log(nombre) //esto es para escribir algo en el code y que al usuario
+    // no le aparezca en la pagina en si
+    let edad = 19
+    edad = edad + 1 // las variables se pueden modificar
+    const edad1 = 29 // aunque pueden haber variables constantes osea que las determinas y no podes cambiar
+    document.write(edad)
+    let Verdadero0Falso = true
+    siguiente = 1
+
+    console.log(nombre+siguiente) // te queda camilo1, sumas strings
+    console.log(edad-siguiente)
+
+    // en javascript se escribe en camel case osea ej: 'contarElementos'
+
+    nombre1 = prompt("Ingrese su nombre: ")  
+    edad2 = prompt("Ingrese su edad: ") //asi agregas un prompt para que ingreses un dato como usuario
+    document.write(nombre1 + " es un lindo nombre")
+    document.write("<br>") // a traves de javascript escribis un break en el acrhivo html
+    document.write(edad2 + "es tu edad")
+    document.write("El año que viene tendras" + (Number(edad)+1) + "años" ) 
+
+    let edad3= prompt("Ingrese su edad: ")
+    if (edad3 >= 18){
+        document.write("Puede pasar")
+    }else{
+        document.write("No puede pasar")
+    }
+</script>
+
+</body>
+</html>
