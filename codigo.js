@@ -23,5 +23,8 @@ las variables tienen diferentes tipos de datos:
 numericos: enteros (integer) o decimales (float)
 strings: cadena de caracteres
 + > suma o concatenacion de strings
+booleano: True o False
+
+el if permite generar difurcaciones
 
 */

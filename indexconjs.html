@@ -10,20 +10,42 @@
     <style> 
     </style>
 </head>
-<body>
  
-<script> // script indica que lo que hay adentro es de javascript
+<script> 
+/*
+    // script indica que lo que hay adentro es de javascript
     let nombre = "camilo"
     document.write('Hola Mundo') // asi escribir algo en la pagina con java script
     console.log(nombre) //esto es para escribir algo en el code y que al usuario
     // no le aparezca en la pagina en si
-    let edad = 19
+    let edad = 19 // le asigno un valor
     edad = edad + 1 // las variables se pueden modificar
     const edad1 = 29 // aunque pueden haber variables constantes osea que las determinas y no podes cambiar
     document.write(edad)
     let Verdadero0Falso = true
     siguiente = 1
+*/
+    /*
+        variables? espacio en memeoria donde se alamacena un valor
+        que es? un cajon 
 
+        como armo una variable?
+        let nombredelavariable = "valor"
+        let nombre = "camilo"
+
+        = es el operador de asignacion
+        "var" << para crear variables, pero ahora se usa mas "let"
+
+        las variables tienen diferentes tipos de datos:
+        numericos: enteros (integer) o decimales (float)
+        strings: cadena de caracteres
+        + > suma o concatenacion de strings
+        booleano: True o False
+
+        el if permite generar difurcaciones
+
+    */
+/*
     console.log(nombre+siguiente) // te queda camilo1, sumas strings
     console.log(edad-siguiente)
 
@@ -42,7 +64,65 @@
     }else{
         document.write("No puede pasar")
     }
+    let altura = 1.6
+    if ((edad>18)&(altura>1.5)){ // el & funciona como "and"
+
+    }
+*/
+     // ademas de true o false tambien hay truthy o falsy
+
+     //falsy: false, null, undefined, 0, -0, 0n, NaN, ''
+
+     //truthy: {}, [], numeros, string, true
+
+     // !False = True, !True = False
+/*
+     alert('Hola') // muestra un cartelito que dice hola
+*/
+     //EJERCICIO
+
+     //peso = prompt("peso: ")
+     //altura = prompt('altura: ')
+/*
+     imc = peso/((altura)*(altura))
+
+     if (imc < 18){
+         document.write('Underweight')
+     }else if (imc < 25){
+         document.write('optimo')
+     }else if (imc < 30){
+         document.write("sobrepeso")
+     }else if (imc < 40){
+         document.write("obesidad")
+     }else{
+         document.write('obesidad severa')
+     }
+     */
+
+     let valor1= prompt("ingresa un valor: ")
+     let valor2= prompt("ingresa otro valor: ")
+     let operacion= prompt("Elegi el tipo de operacion (suma, resta, multiplicacion y division)")
+     
+     if (operacion === "suma"){
+         document.write(Number(valor1) + Number(valor2))
+     }else if (operacion === "resta"){
+         document.write(Number(valor1) - Number(valor2))
+     }else if (operacion === "multiplicacion"){
+         document.write(Number(valor1) * Number(valor2))
+     }else if (operacion === "division" & valor2 != 0){
+         document.write(Number(valor1) / Number(valor2))
+     }else if (operacion === "division" & valor2 == 0){
+         document.write("no es posible dividir por 0")
+     }
+
+
+
 </script>
+
+<script src= "./script.js"> // asi asigno a una archivo js.
+</script>
+
+
 
 </body>
 </html>
