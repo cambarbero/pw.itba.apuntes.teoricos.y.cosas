@@ -33,3 +33,42 @@ function borrarPais(){
     console.log(paises)
 } // entonces ahora cuando tocas el boton 'borrar pais' que se encuentra en el html, se va a borrar el primer
 // elemento de la lista, y si lo tocas de nuevo, se va a volver a borrar el primer elemento de la lista ya modificada
+
+function sumarEdad(){
+    let nombreUsuario = document.getElementById("nombre").value
+    let edadUsuario = document.getElementById("edad").value
+    document.body.append("El nombre del usuario es: " + nombreUsuario + " y va a cumplir " + (parseInt(edadUsuario)+1)) //parseint te pasa el string de edad a un numero asi en vez de que quede 191, queda 20
+    let chequeado = document.getElementById('bases').checked
+    if(chequeado != true){
+        alert("Debe estar de acuerdo con las condiciones")
+    }
+    // ECMASCRIPT 6: la nueva escritura del javascript
+    // template literal
+    // back tick ````
+    document.body.append(`El nombre de usuario es ${nombreUsuario} y va a cumplir ${sumar(pasteInt(edadUsuario))}`)
+}
+
+// query = consulta
+let parrafos = document.querySelectorAll("p")
+console.log(parrafos)
+let seleccionarUno = document.querySelector("#titular")
+console.log(seleccionarUno)
+let seleccionarClase = document.querySelectorAll(".paises") //selecciona todos los paises por el SelectorAll, si queres uno solo es Selector
+console.log(seleccionarClase)
+
+/*
+
+1) Crear una web nueva con la estructura basica
+
+2) Enlazarla a JavaScript
+
+3) Crear un formulario de registro
+
+4) Preguntar si la edad es mayor a 18, en caso contrario, indicarle al usuario que no se puede registrar
+
+5) Obligar al usuario a estar de acuerdo con terminos y condiciones
+
+6) Mostrarle al usuarios en un parrafo, los datos que ingreso
+
+*/
+
