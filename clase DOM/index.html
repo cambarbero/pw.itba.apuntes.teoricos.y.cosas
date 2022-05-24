@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANEJO DE DOM</title>
+    <!-- DOM modelo de objetos del documento: te permite modificar el html y el css desde javascript-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <!-- java script reconoce cada etiqueta como un nodo-->
+    <main>
+        <div id="primera-parte">
+            <h1>El titular</h1>
+            <p>Este texto es <strong> negrita </strong></p>
+        </div>
+        <div id="segunda-parte">
+            <p id="pConId"> id </p>
+            <p class="pConClase"> Class </p>
+            <p> Tag </p>
+        </div>
+        <div>
+            <h1 id="titular"> Web titular</h1>
+            <input type="button" onclick='cambiarTitular()' value = 'Cambiar texto'>
+        </div>
+        <div id="vacio">
+            <input type="button" onclick="hacerAparecer()" value = 'Revelar informacion'>
+
+        </div>
+    </main>
+        <ul>
+            <li class="paises"> ar </li>
+            <li class="paises"> ur </li>
+            <li class="paises"> cl </li>
+        </ul>
+        <input type="button" value="Borrar pais" onclick="borrarPais()">
+    <footer></footer>
+
+    <!--dom viwer: se ve todas las cosas que estan dentro de mi documento-->
+</body> <!-- document: es el nodo global que va a encapsular todo los nodos interiores -->
+
+<script>
+    console.log("soy interno")
+</script>
+<script src="main.js"></script> <!-- necesario para que mi java script funcione con mi HTML -->
+
+</html>
+<!-- si escribis "console.log(document)" es el inspeccionar de una pagina, te va a devolver todo el codigo de la pagina
+si escribis "console.log(document.body)" te va a devolver lo que hay en el body de la pagina
