@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- local storage o almacenamiento local: conseguir que nuestra web guarde datos en muestra carpeta -->
+    <!-- 
+        google chrome a traves de javascript toma el dato y lo guarda y luego lo accedo desde el input
+        
+        lo maximo que se puede guardar en el almacenamiento lcoal son 5mb
+
+        input type="text" id='nombre' onchange='guardarData()'
+
+        Function guardarData(){
+            let valor = document.getelementbyId("nombre").value         
+            localstorage.setItem('name', valor);                    guarda localmente la key (valor) en la cual se encuentra el 'name'
+        }
+    -->
+
+
+    <!--
+            localstorage: guarda local
+            sessionstorage: guarda temporal
+    -->
+
+    <!--
+        JSON : JavaScript Objtect Notation
+    -->
+
+    <!-- JAVASCRIPT no lee JSON -->
+
+    <!--
+    stringify = objeto a JSON
+    parse = json a objeto
+    -->
+
+    <label for="name"> Tu nombre: </label>
+
+    <input name="name"
+    id=""nombreIngresado type="text">
+    <script src="localstorage.js"
+        oninput="guardarData()">
+    </script>         
+
+    <input type="button" onclick="borrarData()" value="borrar">
+
+</body>
+</html>
